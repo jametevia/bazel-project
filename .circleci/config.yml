@@ -5,7 +5,7 @@
 version: 2
 jobs:
   build:
-    machine: ubuntu-2004:202008-01
+    machine: True
     steps:
       - checkout
       - restore_cache:
