@@ -51,11 +51,10 @@ workflows:
   version: 2
   build-deploy:
     jobs:
-      - build
       - deploy:
-          requires:
-            - build
+          context:
+            - Shared
           filters:
             branches:
               only:
-                - master
+                - main
